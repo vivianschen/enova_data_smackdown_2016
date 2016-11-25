@@ -14,7 +14,7 @@ on buying books from authors and advertising them. Prices for books are set, but
 decide the advertising budget. 
 
 
-Goal
+**Goal
 
 Your boss comes to you with a new list of prospective books (training.csv). She asks you to
 figure out whether to publish a book and how much to spend on advertising each book.
@@ -23,7 +23,7 @@ amount of money you pay the author) and advertising. In order to reduce risk, yo
 only allowing up to $100,000 to be spent on advertising for an individual book.
 
 
-Data Set
+**Data Set
 
 We are provided a training data set which contains all the information
 about the books for the past 5 years. We also have a validation data set (validation.csv) that you are to use to determine which
@@ -48,7 +48,7 @@ The variables are defined in the file DataDictionary.xlsx. They are categorized 
 8. Author Advance – Advance to be paid to the author
 
 
-Output
+**Output
 
 A comma separated text file (CSV) that contains three columns:
 
