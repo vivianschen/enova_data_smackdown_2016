@@ -38,15 +38,13 @@ regfit.full=regsubsets(sales~ . , data=training, nvmax=15)
 reg.summary=summary(regfit.full)
 reg.summary
 
-#Plotting the RSS, adjusted R^2, Cp, and BIC
+#potting adjusted R^2, Cp, and BIC
 par(mfrow=c(2,2))
-plot(reg.summary$rss, xlab="Number of Variables", ylab="RSS")
 plot(reg.summary$adjr2, xlab="Number of Variables", ylab="Adjusted RSq")
 plot(reg.summary$cp, xlab="Number of Variables", ylab="Cp")
 plot(reg.summary$bic, xlab="Number of Variables", ylab="BIC")
 
-#Find max # of predictors for each method
-which.min(reg.summary$rss)
+#max # of predictors for each method
 which.max(reg.summary$adjr2)
 which.min(reg.summary$cp)
 which.min(reg.summary$bic)
@@ -60,7 +58,7 @@ mean((lasso.pred - training.test[, "sales"])^2)
 
 mod.lasso <-  glmnet(model.matrix(sales ~ . , data = training), training[, "sales"], alpha = 1)
 predict(mod.lasso, s = lambda.best, type = "coefficients")
-#R^2
+
 lasso.test <-  1 - mean((training.test[, "sales"] - lasso.pred)^2) /
   mean((training.test[, "sales"] - test.avg)^2)
 lasso.test
