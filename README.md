@@ -48,14 +48,3 @@ The variables are defined in the file DataDictionary.xlsx. They are categorized 
 8. Author Advance – Advance to be paid to the author
 
 
-**Output**
-
-A comma separated text file (CSV) that contains three columns:
-
-a. book_id – the ID of the book
-
-b. import_decision - coded as 0 or 1. A value of 0 indicates that you DO NOT
-
-recommend publishing the book, 1 indicates that you DO recommend publishing the book.
-
-c. ad_budget - the amount in dollars to spend on advertising
