@@ -41,26 +41,21 @@ The variables are defined in the file DataDictionary.xlsx. They are categorized 
 
 5. Reading Score – Reading score for the book
 
-6. Performance – Information on how the books performed. Note that this data is
+6. Performance – Information on how the books performed.
 
-available only in the training dataset.
-
-7. Advertising – Contains the ad_budget variable, amount spent on advertising. Note that
-
-this data is available only in the training dataset.
+7. Advertising – Contains the ad_budget variable, amount spent on advertising.
 
 8. Author Advance – Advance to be paid to the author
 
+
 Output
 
-Provide a comma separated text file (CSV) that contains three columns:
+A comma separated text file (CSV) that contains three columns:
 
 a. book_id – the ID of the book
 
 b. import_decision - coded as 0 or 1. A value of 0 indicates that you DO NOT
 
-recommend publishing the book, 1 indicates that you DO recommend publishing
-
-the book.
+recommend publishing the book, 1 indicates that you DO recommend publishing the book.
 
 c. ad_budget - the amount in dollars to spend on advertising
