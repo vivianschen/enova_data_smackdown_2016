@@ -2,7 +2,7 @@
 An attempt at Enova's data analysis challenge...
 
 
-Scenario
+**Scenario**
 
 You are an analytics employee working for a book publisher. Your company has data on books
 they published in the past 5 years, including details about the book, the author, how much they
